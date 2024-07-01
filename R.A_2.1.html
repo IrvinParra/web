@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo que se Aprendió</title>
+    <link rel="stylesheet" href="Estilos/formas.css"> <!-- Enlazar archivo CSS externo -->
+    <!--CSS only-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <ul>
+            <a href="index.html"><img class="galeri" src="Imagenes/logos/cona.png" alt=""></a>
+            <li><a href="#config-switch">Práctica 4</a></li>
+            <li><a href="#comandos-switch-router">Comandos de <br> router</a></li>
+            <li><a href="#modelo-osi">Modelo OSI</a></li>
+            <li><a href="#verifi-config">Verificación de <br> configuración</li>
+            <li><a href="#config-interfaces">Configuración de <br> interfaces</a></li>
+            <li><a href="#admin-archivos">Administración de archivos <br> de configuración IOS</a></li>
+            <li><a href="#rutas-estaticas">Rutas estáticas</a></li>
+
+
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <!-- Configuración de switch -->
+        <section id="config-switch" class="topic">
+            <h2>Práctica 4</h2>
+            <p>En está hicimos una resolución de problemas de configuración de una red inalámbrica. La cuál consiste en
+                ocupar 3 switch (2960), un router (1941), 5 terminales y 2 router inalambricos. Nos enfocamos más en los
+                switch
+                ya que está práctica consiste en tener VLAN por cada subred, configuramos los switch y en los router
+                trabajamos
+                con encapsulación para que toda la red se comunique.</p>
+            <img src="Imagenes/R.A_2.1/Config. Switch/img35.jpg" alt="">
+        </section>
+
+        <!-- Comandos de switch y router -->
+        <section id="comandos-switch-router" class="topic">
+            <h2>Comandos del router</h2>
+            <p>Algunos comandos del router los básicos e importantes son:
+            <table>
+                <tr>
+                    <td><b>Comandos</b></td>
+                    <td><b>Para que sirven</b></td> <br>
+                <tr>
+                    <td>
+                        end y exit <br>
+                        enable <br>
+                        ^z <br>
+                        config t <br>
+                        no hostname <br>
+                        login <br>
+                        motd <br>
+                        caracteres <br>
+                        no banner motd
+                    </td>
+
+                    <td>
+                        Se utiliza para salir del modo exec privilegiado <br>
+                        Se utiliza para entrar al modo exec privilegiado <br>
+                        Se puede utilizar para salir del modo de configuración global y regresar al modo exec
+                        privilegiado <br>
+                        Se puede emplear para ingresar al modo de configuración global <br>
+                        Sirve para eliminar el nombre que le hayamos puesto <br>
+                        Establece un mensaje de inicio de sesión <br>
+                        Establecer banner de mensaje del día <br>
+                        Se utilizan para abrir y cerrar el mensaje del banner <br>
+                        Quita el mensaje que hemos puesto anteriormente <br>
+
+                    </td>
+                </tr>
+                </tr>
+            </table>
+            </p>
+        </section>
+
+        <!-- Modelo OSI -->
+        <section id="modelo-osi" class="topic">
+            <h2>Modelo OSI</h2>
+            <p>(Open Systems Interconnection) es un marco conceptual que estandariza las funciones de un sistema de
+                telecomunicaciones. Fue desarrollado por la organización internacional de normalización. Depende de la
+                capa inferior para realizar sus funciones y proporciona servicios a la capa superior</p>
+            <img src="Imagenes/R.A_2.1/Modelo OSI/img20.jpg" alt="">
+        </section>
+
+        <!--Configurar interfaces-->
+        <section id="config-interfaces" class="topic">
+            <h2>Configuración de interfaces</h2>
+            <p>Las interfaces nos sirven para cualquier práctica, ya que aunque solo sea un switch (2960) y 2 terminales
+                se
+                necesitan las configuraciones de estás ya que sin ellas no pueden tener comunicación, ahora si bien se
+                realiza alguna VLAN,
+                se necesita las interfaces para que tengan comunicación todas las VLANs
+            </p>
+            <img src="Imagenes/R.A_2.1/Config. Interfaces/img21.PNG" alt="">
+        </section>
+
+        <!-- Verificación de configuración -->
+        <section id="verifi-config" class="topic">
+            <h2>Verificación de configuración</h2>
+            <p>Para verificar la configuración de la interfaz, tenemos que utlizar los comandos <b>"show ip interface
+                    brief y show ipv6 interface brief"</b>estos nos indican cuales interfaces tenemos con dirección IP,
+                con su mascara de red y apagados. </p>
+            <img src="Imagenes/R.A_2.1/Comandos/img19.jpg" alt="">
+        </section>
+
+        <!-- Administración de Archivos de configuración IOS -->
+        <section id="admin-archivos" class="topic">
+            <h2>Administración de archivos de configuración IOS</h2>
+            <p>Es fundamental para garantizar la configuración adecuada y la recuperación en caso de problemas. es
+                esencial para mantener la estabilidad y la seguridad de la red. Con el uso adecuado de comandos y
+                procedimientos, puedes asegurar que la configuración esté respaldada y sea accesible cuando sea
+                necesario.</p>
+            <img src="Imagenes/R.A_2.1/IOS/img24.png" alt="">
+        </section>
+
+        <!--Rutas estáticas-->
+        <section id="rutas-estaticas" class="topic">
+            <h2>Rutas estáticas</h2>
+            <p>Se configuran de forma manual. Estás definen una ruta explícita entre dos dispositivos de red. A
+                diferencia de los protocolos de routing dinámico, las rutas estáticas no se actualizan automáticamente y
+                se deben reconfigurar de forma manual si se modifica la topología de la red. <br> Los beneficios de
+                utilizar rutas estáticas incluyen la mejora de la seguridad y la eficaacia de los recursos.</p>
+            <img src="Imagenes/R.A_2.1/Rutas estáticas/img23.png" alt="">
+        </section>
+    </div>
+
+    <a href="Unidad 2.html"><button type="button" class="btn btn-primary btn-lg">Regresar</button></a>
+</body>
+
+</html>

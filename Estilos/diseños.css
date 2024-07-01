@@ -1,0 +1,109 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portada {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.portada h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #0066cc; /* Azul CONALEP */
+}
+
+.datos {
+    text-align: left;
+    padding: 10px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+.datos p {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #006600;
+    overflow: hidden;
+}
+
+.navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li{
+    float: left;
+}
+
+.navbar ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 26px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover{
+    background-color: #257200 ;
+}
+
+/* Estilos para las secciones */
+.resultado-aprendizaje,
+.lo-aprendido {
+    margin-bottom: 30px;
+}
+
+.resultado-aprendizaje h2,
+.lo-aprendido h2 {
+    font-size: 1.8em;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.resultado-aprendizaje p,
+.lo-aprendido p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666666;
+}
+
+img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+    float: left;
+    height: 80px;
+}
+
+/*Estilos para boton*/
+
+.btn {
+    border: none; 
+    color: #ffffff; 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 5px;
+    background-color: #006600; 
+    float: right;
+  }

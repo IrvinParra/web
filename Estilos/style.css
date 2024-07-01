@@ -1,0 +1,91 @@
+ /* Estilos para la barra de navegación */
+
+nav{
+    background-color: #006600;
+    overflow: hidden;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 26px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background-color: #257200 ;
+}
+
+/* Estilos para el encabezado */ 
+
+header{
+    background-color: #F7F9F7;
+    padding: 60px;
+    text-align: center;
+}
+
+/* Estilos para las secciones */
+
+section{
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Estilos para mejorar la apariencia */
+
+body{
+    font-family: Arial;
+}
+
+h1 h2{
+    color: #333;
+}
+
+h1{
+    color: #006600;
+}
+
+p{
+    color: #000000;
+    text-align: center;
+}
+
+/*Estilos de imagenes*/
+
+img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+    height: 80px;
+    float: left;
+}
+
+/*Estilos de tablas*/
+
+table {
+  font-family: arial;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
